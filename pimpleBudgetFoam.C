@@ -55,7 +55,6 @@ int main(int argc, char *argv[])
     #include "createFvOptions.H"
     #include "initContinuityErrs.H"
     
-    // #include "createFieldsNumericalDissipation.H"
     #include "createFieldsBudget.H"    
 
     turbulence->validate();
@@ -93,7 +92,6 @@ int main(int argc, char *argv[])
             
         }
         
-        // #include "numericalDissipation.H"
         #include "budget.H"        
 
         runTime.write();
